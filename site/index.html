@@ -19,6 +19,9 @@
             .jumbotron {
               background-color: black;
             }
+            .notices p {
+              line-height:20px !important;
+            }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -29,16 +32,38 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-inner">
+          <div class="container-fluid">
+              <a href="#" class="brand">UCI Crypto &amp; Security Seminar</a>
+              <div class="pull-right">
+                  <p class="navbar-text"><a target="_blank" href="http://uci.edu/">UCI</a> | <a target="_blank" href="http://www.ics.uci.edu/">ICS</a> | <a target="_blank" href="http://sprout.ics.uci.edu/">SPROUT</a> | <a target="_blank" href="http://sconce.ics.uci.edu/">SCONCE</a>  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">UCI Crypto & Security Seminar</a>
+          <a class="navbar-brand" href="#">UCI Crypto &amp; Security Seminar</a>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a target="_blank" href="http://uci.edu/">UCI</a></li>
+            <li><a target="_blank" href="http://www.ics.uci.edu/">ICS</a></li>
+            <li><a target="_blank" href="http://sprout.ics.uci.edu/">SPROUT</a></li>
+            <li><a target="_blank" href="http://sconce.ics.uci.edu/">SCONCE</a></li>
+            <!-- <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -46,33 +71,51 @@
     <div class="jumbotron">
       <div class="container">
         <div class="well">
-          <h2 style="text-align:center;">UCI Crypto & Security Seminar</h2>
-          <br/>
-          <p>
-
-          This is a weekly seminar in which students and faculty members present papers on various topics in cryptography, security, and privacy. The purpose is to disseminate industry and research trends and results in a friendly environment. Consequently, the seminar is open to any and all interested persons. The details about each talk, including the time and location for the seminar meeting, are listed below.
-
-          </p>
+          <h2 style="text-align:center;">UCI Crypto &amp; Security Seminar</h2>
         </div>
       </div>
     </div>
 
     <div class="container">
 
+    <h3>What's the point?</h3>
+    <p>
+      This is a weekly seminar in which students and faculty members present papers on various topics in cryptography, security, and privacy. The purpose is to disseminate industry and research trends and results in a friendly environment. 
+    </p>
+
+    <h3>How can you take part?</h3>
+    <p>
+      All talks are expected to take place in DBH 3011, and are open to the UCI community; all are quite welcome to attend. If you are interested in presenting a topic, please attend one of the meetings and propose it to the group. Alternatively, you may touch base with <a target="_blank" href="http://www.ics.uci.edu/~stasio/">Stanislaw Jarecki</a> or <a target="_blank" href="http://www.ics.uci.edu/~gts/">Gene Tsudik</a> offline. Their contact information is available on their corresponding UCI websites. 
+    </p>
+
+    <h3>When is the next meeting?</h3>
+    <p>
+    See the list below!
+    </p>
+
       <!-- Newest talk -->
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <h3 class="panel-title">Seminar Talks</h3>
+          <h3 class="panel-title">Chronological List of Seminar Talks</h3>
         </div>
         <div class="panel-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <p>Talk: TODO</p>
-              <p>Presenter: TODO</p>
-              <p>Abstract: TODO</p>
-              <p>Slides: TODO</p>
-              <p>Time: TODO</p>
-              <p>Location: TODO</p>
+              <p><b>Talk</b>: Affine-Power S-Boxes over Galois Fields with Area-Optimized Logic Implementations</p>
+              <p><b>Presenter</b>: Christopher Wood</p>
+              <p><b>Abstract</b>: Cryptographic S-boxes are fundamental in key-iterated substitution permutation network (SPN) designs for block ciphers. As a natural way for realizing Shannon's confusion and diffusion properties in cryptographic primitives through nonlinear and linear behavior, respectively, SPN designs served as the basis for the Advanced Encryption Standard and a variety of other block ciphers. In this work we present a methodology for minimizing the logic resources for n-bit affine-power S-boxes over Galois fields based on measurable security properties and finding corresponding area-efficient combinational implementations in hardware. Motivated by the potential need for new and larger S-boxes, we use our methodology to find area-optimized circuits for 8- and 16-bit S-boxes. Our methodology is capable of finding good upper bounds on the number of XOR and AND gate equivalents needed for these circuits, which can be further optimized using modern CAD tools.</p>
+              <p><b>Paper</b>: <a href="#">here</a></p>
+              <p><b>Slides</b>: <a href="#">here</a></p>
+              <p><b>Date, Time, Location</b>: February 3, 2014, 10:00am, DBH 3011</p>
+            </li>
+
+            <li class="list-group-item">
+              <p><b>Talk</b>: Searchable Symmetric Encryption</p>
+              <p><b>Presenter</b>: Stanislaw Jarecki</p>
+              <p><b>Abstract</b>: TBA</p>
+              <p><b>Paper</b>: <a href="#">here</a></p>
+              <p><b>Slides</b>: <a href="#">here</a></p>
+              <p><b>Date, Time, Location</b>: January 27, 2014, 10:00am, DBH 3011</p>
             </li>
           </ul>
         </div>
@@ -81,7 +124,7 @@
       <hr>
 
       <footer>
-        <p><a target="_blank" href="http://uci.edu/">UCI<a> | <a target="_blank" href="http://www.ics.uci.edu/">ICS</a> | <a target="_blank" href="http://sprout.ics.uci.edu/">SPROUT</a></p>
+        <p>Maintained by Christopher Wood. Last updated 1/27/14.</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
